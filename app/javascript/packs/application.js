@@ -9,3 +9,9 @@ import "channels"
 
 Rails.start()
 ActiveStorage.start()
+
+document.addEventListener("DOMContentLoaded", () => {
+  converse.initialize({
+    bosh_service_url: "http://localhost:5280/http-bind"
+  })
+})
